@@ -48,9 +48,10 @@ let final_40 = document.getElementById("total");
 
 
 if (userAge < 18){
-    final_20.innerHTML = "Il costo del tuo biglietto è di: " + finalPrice_twenty + " €"
+    final_20.innerHTML = "Il costo del tuo biglietto è di: " + ( finalPrice_twenty.toFixed( 2 ) )
+    + " €"
 } else if (userAge > 65){
-    final_40.innerHTML = "Il costo del tuo biglietto è di: " + finalPrice_fourty + " €"
+    final_40.innerHTML = "Il costo del tuo biglietto è di: " + ( finalPrice_fourty.toFixed( 2 ) ) + " €"
 } else if (userAge >= 18 && userAge <= 65){
-    normalPrice.innerHTML = "Il costo del tuo biglietto è di: " + price + " €"
+    normalPrice.innerHTML = "Il costo del tuo biglietto è di: " + ( price.toFixed( 2 ) ) + " €"
 }
